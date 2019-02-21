@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransitionRule - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">com.toxicbakery.kfinstatemachine</a>&nbsp;/&nbsp;<a href="./index.html">TransitionRule</a><br/>
+<br/>
+<h1>TransitionRule</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TransitionRule</span><span class="symbol">&lt;</span><span class="identifier">S</span><span class="symbol">, </span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code>
+<p><strong>Platform and version requirements:</strong> Common</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TransitionRule</span><span class="symbol">(</span><span class="identifier" id="com.toxicbakery.kfinstatemachine.TransitionRule$<init>(com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.reflect.KClass((com.toxicbakery.kfinstatemachine.TransitionRule.T)), com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.collections.List((kotlin.Function1((com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Boolean)))), kotlin.collections.List((kotlin.Function2((com.toxicbakery.kfinstatemachine.StateMachine((com.toxicbakery.kfinstatemachine.TransitionRule.S)), com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Unit)))))/oldState">oldState</span><span class="symbol">:</span>&nbsp;<a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">, </span><span class="identifier" id="com.toxicbakery.kfinstatemachine.TransitionRule$<init>(com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.reflect.KClass((com.toxicbakery.kfinstatemachine.TransitionRule.T)), com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.collections.List((kotlin.Function1((com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Boolean)))), kotlin.collections.List((kotlin.Function2((com.toxicbakery.kfinstatemachine.StateMachine((com.toxicbakery.kfinstatemachine.TransitionRule.S)), com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Unit)))))/transition">transition</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.toxicbakery.kfinstatemachine.TransitionRule$<init>(com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.reflect.KClass((com.toxicbakery.kfinstatemachine.TransitionRule.T)), com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.collections.List((kotlin.Function1((com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Boolean)))), kotlin.collections.List((kotlin.Function2((com.toxicbakery.kfinstatemachine.StateMachine((com.toxicbakery.kfinstatemachine.TransitionRule.S)), com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Unit)))))/newState">newState</span><span class="symbol">:</span>&nbsp;<a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">, </span><span class="identifier" id="com.toxicbakery.kfinstatemachine.TransitionRule$<init>(com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.reflect.KClass((com.toxicbakery.kfinstatemachine.TransitionRule.T)), com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.collections.List((kotlin.Function1((com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Boolean)))), kotlin.collections.List((kotlin.Function2((com.toxicbakery.kfinstatemachine.StateMachine((com.toxicbakery.kfinstatemachine.TransitionRule.S)), com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Unit)))))/validations">validations</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="symbol">(</span><span class="identifier">transition</span><span class="symbol">:</span>&nbsp;<a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;listOf()<span class="symbol">, </span><span class="identifier" id="com.toxicbakery.kfinstatemachine.TransitionRule$<init>(com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.reflect.KClass((com.toxicbakery.kfinstatemachine.TransitionRule.T)), com.toxicbakery.kfinstatemachine.TransitionRule.S, kotlin.collections.List((kotlin.Function1((com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Boolean)))), kotlin.collections.List((kotlin.Function2((com.toxicbakery.kfinstatemachine.StateMachine((com.toxicbakery.kfinstatemachine.TransitionRule.S)), com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Unit)))))/reactions">reactions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="symbol">(</span><span class="identifier">machine</span><span class="symbol">:</span>&nbsp;<a href="../-state-machine/index.html"><span class="identifier">StateMachine</span></a><span class="symbol">&lt;</span><a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<span class="identifier">transition</span><span class="symbol">:</span>&nbsp;<a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;listOf()<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="new-state.html">newState</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">newState</span><span class="symbol">: </span><a href="index.html#S"><span class="identifier">S</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="old-state.html">oldState</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">oldState</span><span class="symbol">: </span><a href="index.html#S"><span class="identifier">S</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="transition.html">transition</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">transition</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="only-if.html">onlyIf</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onlyIf</span><span class="symbol">(</span><span class="identifier" id="com.toxicbakery.kfinstatemachine.TransitionRule$onlyIf(kotlin.Function1((com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Boolean)))/func">func</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">transition</span><span class="symbol">:</span>&nbsp;<a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TransitionRule</span></a><span class="symbol">&lt;</span><a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">,</span>&nbsp;<a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="reaction.html">reaction</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reaction</span><span class="symbol">(</span><span class="identifier" id="com.toxicbakery.kfinstatemachine.TransitionRule$reaction(kotlin.Function2((com.toxicbakery.kfinstatemachine.StateMachine((com.toxicbakery.kfinstatemachine.TransitionRule.S)), com.toxicbakery.kfinstatemachine.TransitionRule.T, kotlin.Unit)))/func">func</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">machine</span><span class="symbol">:</span>&nbsp;<a href="../-state-machine/index.html"><span class="identifier">StateMachine</span></a><span class="symbol">&lt;</span><a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<span class="identifier">transition</span><span class="symbol">:</span>&nbsp;<a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TransitionRule</span></a><span class="symbol">&lt;</span><a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">,</span>&nbsp;<a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
